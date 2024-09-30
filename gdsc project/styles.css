@@ -1,0 +1,181 @@
+@keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(1.0);
+      -o-animation-delay: 5s;
+    }
+  }
+body{
+    background-color: aqua;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    max-height: 820px;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    transition: background-color 0.5s ease;
+    
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    animation: fadeInScale 0.9s ease forwards;
+    
+  
+  }
+  
+  .A {
+    background-color: red;
+    grid-row: span 2;
+    font-size: 32px;
+    border-top-left-radius: 15px;
+    animation-delay: 0.1s;
+  }
+  
+  .B {
+    background-color: peachpuff;
+    font-size: 50px;
+    border-end-end-radius: 15px;
+    font-family: "Edu QLD Beginner", cursive;
+    animation-delay: 0.2s;
+  }
+  
+  .C {
+    background-color: rgb(213, 146, 254);
+    grid-row: span 2;
+    font-size: 90px;
+    border-top-right-radius: 15px;
+    animation-delay: 0.3s;
+  }
+  
+  .E {
+    background-color: rgb(197, 250, 118);
+    grid-column: span 2;
+    font-size: 80px;
+    border-end-start-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation-delay: 0.4s;
+  }
+  
+  .number {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    animation-delay: 0.5s;
+  }
+  
+  .name {
+    font-size: 70px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    font-family: "Dancing Script", cursive;
+    animation-delay: 0.6s;
+  }
+  
+  .icon {
+    font-size: 200px;
+    font-weight: bold;
+  }
+
+  .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+
+  .A:hover {
+    background-color: red;
+  }
+
+  .B:hover {
+    background-color: peachpuff;
+  }
+
+  .C:hover {
+    background-color:rgb(213, 146, 254);
+  }
+
+  .E:hover {
+    background-color: rgb(197, 250, 118);
+  }
+
+  .name:hover {
+    background-color: rgb(36, 36, 36);
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      height: auto;
+    }
+    .A, .C {
+      grid-row: span 1;
+    }
+    .E {
+      grid-column: span 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 15px;
+    }
+    .item {
+      font-size: 24px;
+    }
+    .B {
+      font-size: 36px;
+    }
+    .C {
+      font-size: 60px;
+    }
+    .E {
+      font-size: 50px;
+    }
+    .number {
+      font-size: 36px;
+    }
+    .name {
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+    .item {
+      font-size: 18px;
+    }
+    .B {
+      font-size: 24px;
+    }
+    .C {
+      font-size: 40px;
+    }
+    .E {
+      font-size: 36px;
+    }
+    .number {
+      font-size: 24px;
+    }
+    .name {
+      font-size: 36px;
+    }
+  }
