@@ -17,6 +17,8 @@ make sure to keep this layout design as base.
 1) Add responsiveness for mobile , tablet and laptop screens.
 2) Add starting load Animation.
 3) Add hover effect for each blocks .
+
+
 ``` Responsive layouts```
 1) for mobile
    ![Screenshot 2024-09-30 225523](https://github.com/user-attachments/assets/bc607730-5f07-4174-8321-5bf6b6f67646)
